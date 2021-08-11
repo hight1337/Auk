@@ -1,0 +1,191 @@
+.section-bio {
+  padding-top: 75px;
+  width: 100%;
+  &__title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 125px;
+    h2 {
+      font-family: "DendaNewC", sans-serif;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 75px;
+
+      color: #00a7a7;
+    }
+    .bio-line {
+      position: absolute;
+      bottom: 35px;
+      left: 245px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .person-photo {
+      margin-right: 95px;
+      border-radius: 150px 0 150px 0;
+      width: 100%;
+      max-width: 505px;
+      object-fit: cover;
+    }
+    .section-bio__text {
+      position: relative;
+      .title {
+        font-family: "DendaNewC", sans-serif;
+
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 45px;
+
+        text-transform: uppercase;
+
+        color: #00a757;
+      }
+      .position {
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+
+        color: #959595;
+
+        margin-bottom: 25px;
+      }
+      p {
+        span {
+          color: #00a757;
+        }
+      }
+      img {
+        position: absolute;
+        top: -44px;
+        left: 385px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .section-bio {
+    padding-top: 65px;
+    &__title {
+      padding-bottom: 80px;
+      h2 {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      .bio-line {
+        width: 285px;
+        bottom: 15px;
+        left: 190px;
+      }
+    }
+    &__wrapper {
+      .person-photo {
+        border-radius: 110px 0 110px 0;
+        max-width: 400px;
+        margin-right: 75px;
+      }
+      .section-bio__text {
+        p {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        img {
+          top: -22px;
+          left: 392px;
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .section-bio {
+    padding-top: 65px;
+    &__title {
+      padding-bottom: 50px;
+      h2 {
+        font-size: 39px;
+        line-height: 50px;
+      }
+      .bio-line {
+        width: 215px;
+        bottom: 0px;
+        left: 173px;
+      }
+    }
+    &__wrapper {
+      .person-photo {
+        max-width: 350px;
+        margin-right: 30px;
+      }
+      .section-bio__text {
+        .title {
+          font-size: 30px;
+          line-height: 35px;
+        }
+        .position {
+          font-size: 20px;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 25px;
+        }
+        img {
+          top: -15px;
+          left: 260px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 425px) {
+  .section-bio {
+    padding-top: 30px;
+    &__title {
+      padding-bottom: 40px;
+      h2 {
+        font-size: 19px;
+        line-height: 20px;
+      }
+      .bio-line {
+        display: none;
+      }
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      .person-photo {
+        max-width: 374px;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .section-bio__text {
+        width: 374px;
+
+        p {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 375px) {
+  .section-bio {
+    &__title {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+}

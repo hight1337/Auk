@@ -7,6 +7,8 @@ header {
     justify-content: space-between;
   }
   .header-text {
+    display: flex;
+    align-items: center;
     a {
       margin-right: 55px;
       font-family: "DendaNewC", sans-serif;
@@ -21,8 +23,7 @@ header {
         border-bottom: 1px solid #00a757;
       }
     }
-    display: flex;
-    align-items: center;
+
     .language-btn {
       padding: 12px;
       outline: none;
@@ -60,8 +61,11 @@ header {
         margin: 0 25px;
       }
       .language-btn {
-        padding: 5px;
+        padding: 2px 5px;
         font-size: 12px;
+        &.active {
+          border-radius: 10px 0 10px 0;
+        }
       }
     }
   }
