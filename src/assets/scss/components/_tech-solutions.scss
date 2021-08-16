@@ -1,0 +1,259 @@
+.technological-solutions--section {
+  background-image: url(../images/tech-section-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .technological-solutions--wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+
+    .left {
+      width: 40%;
+      .title {
+        font-family: "DendaNewC", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #00a757;
+        margin-bottom: 70px;
+      }
+      .sub-title {
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      .paragraph {
+        font-family: "Roboto Slab", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 50px;
+      }
+      .controls {
+        .underline {
+          width: 600px;
+          height: 1px;
+          background-color: #c1c9cb;
+        }
+        .pages {
+          .number-pages {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            li {
+              &.active {
+                border-radius: 50%;
+                border: 1px solid #000;
+              }
+              font-family: "DendaNewC", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 30px;
+              line-height: 39px;
+              text-transform: uppercase;
+              padding: 8px 20px;
+              cursor: pointer;
+              &:not(:last-child) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .arrows {
+          margin-top: 30px;
+          .arrows-wrapper {
+            display: flex;
+            align-items: center;
+            li {
+              &:hover {
+                border-radius: 50%;
+                border: 1px solid #000;
+              }
+              padding: 14px 18px;
+              border: 1px solid transparent;
+              cursor: pointer;
+              transition: 0.2s ease-in-out;
+
+              &:not(:last-child) {
+                margin-right: 10px;
+              }
+              img {
+                width: 20px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      text-align: center;
+      width: 60%;
+      .slider-img {
+        width: 100%;
+        max-width: 800px;
+        object-fit: cover;
+        border-radius: 150px 0 150px 0;
+      }
+    }
+  }
+}
+.tech-solutions--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .technological-solutions--section {
+    .technological-solutions--wrapper {
+      padding-top: 50px;
+
+      .left {
+        width: 40%;
+        .title {
+          font-size: 25px;
+          margin-bottom: 40px;
+        }
+        .sub-title {
+          font-size: 20px;
+          line-height: 30px;
+          width: 350px;
+        }
+        .paragraph {
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 35px;
+          max-width: 300px;
+        }
+        .controls {
+          .underline {
+            width: 441px;
+            position: relative;
+            left: -20px;
+          }
+          .pages {
+            .number-pages {
+              margin-bottom: 30px;
+              li {
+                font-size: 20px;
+                padding: 0 15px;
+              }
+            }
+          }
+          .arrows {
+            margin-top: 10px;
+            .arrows-wrapper {
+              display: flex;
+              align-items: center;
+              li {
+                &:hover {
+                  border-radius: 50%;
+                  border: 1px solid #000;
+                }
+                padding: 7px 13px;
+                border: 1px solid transparent;
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                img {
+                  width: 18px;
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        .slider-img {
+          max-width: 550px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technological-solutions--section {
+    .technological-solutions--wrapper {
+      padding-top: 30px;
+
+      .left {
+        width: 40%;
+        .title {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+        .sub-title {
+          font-size: 18px;
+          line-height: 27px;
+          width: 260px;
+        }
+        .paragraph {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 25px;
+          max-width: 250px;
+        }
+        .controls {
+          .underline {
+            width: 337px;
+          }
+          .pages {
+            .number-pages {
+              margin-bottom: 15px;
+              li {
+                font-size: 20px;
+                padding: 0 15px;
+              }
+            }
+          }
+          .arrows {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            .arrows-wrapper {
+              display: flex;
+              align-items: center;
+              li {
+                &:hover {
+                  border-radius: 50%;
+                  border: 1px solid #000;
+                }
+                padding: 7px 13px;
+                border: 1px solid transparent;
+                cursor: pointer;
+                transition: 0.2s ease-in-out;
+                img {
+                  width: 18px;
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        .slider-img {
+          max-width: 400px;
+          border-radius: 100px 0 100px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .technological-solutions--section {
+    display: none;
+  }
+  .tech-solutions--mobile {
+    display: block;
+  }
+}
