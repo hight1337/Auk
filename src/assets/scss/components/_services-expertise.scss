@@ -84,12 +84,14 @@
             img {
               width: 37px;
               height: 37px;
+              cursor: pointer;
             }
           }
 
           img {
             width: 25px;
             height: 25px;
+            cursor: pointer;
           }
         }
 
@@ -148,6 +150,124 @@
           .expanded-section-text {
             font-size: 18px;
             max-width: 575px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-expertise--section {
+    .services-expertise--wrapper {
+      .left {
+        h4 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+        .services-expertise-leaf {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      .right {
+        width: 65%;
+        .section-buttons {
+          padding-bottom: 15px;
+          button {
+            font-size: 15px;
+          }
+        }
+        .expanded-window {
+          .expanded-section-title {
+            font-size: 17px;
+            padding: 15px 0;
+
+            &.active {
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              p {
+              }
+            }
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .expanded-section-text {
+            font-size: 15px;
+            max-width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .services-expertise--section {
+    .services-expertise--wrapper {
+      .left {
+        width: 100%;
+        margin-bottom: 10px;
+        .services-expertise--line {
+          img {
+            display: none;
+          }
+        }
+        h4 {
+          font-size: 21px;
+          line-height: 30px;
+          width: 100%;
+          max-width: 100%;
+        }
+        .services-expertise-leaf {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      .right {
+        width: 100%;
+        .section-buttons {
+          padding-bottom: 15px;
+          button {
+            font-size: 15px;
+          }
+        }
+        .expanded-window {
+          .expanded-section-title {
+            font-size: 21px;
+            padding: 15px 0;
+            line-height: 23px;
+            p {
+              width: 300px;
+            }
+
+            &.active {
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              p {
+              }
+            }
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .expanded-section-text {
+            font-size: 15px;
+            max-width: 300px;
           }
         }
       }
