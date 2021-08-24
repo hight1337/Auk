@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "DendaNewC";
+  src: url("../fonts/dendanewc-bold.woff2") format("woff2"),
+    url("../fonts/dendanewc-bold.otf") format("opentype");
+}
+
 *,
 ::after,
 ::before {
