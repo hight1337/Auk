@@ -65,6 +65,9 @@
         }
       }
       .expanded-window {
+        cursor: pointer;
+        overflow: hidden;
+        border-bottom: 1px solid #c1c9cb;
         .expanded-section-title {
           display: flex;
           align-items: center;
@@ -76,33 +79,40 @@
           font-size: 25px;
           line-height: 40px;
 
-          border-bottom: 1px solid #c1c9cb;
-
-          &.active {
-            border-bottom: none;
-            padding-bottom: 10px;
-            img {
-              width: 37px;
-              height: 37px;
-              cursor: pointer;
-            }
-          }
-
           img {
             width: 25px;
             height: 25px;
             cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            transform: rotate(0deg);
           }
         }
 
         .expanded-section-text {
+          overflow: hidden;
           font-family: "Roboto Slab", sans-serif;
-
           font-weight: 400;
           font-size: 20px;
           line-height: 26px;
           width: 100%;
           max-width: 800px;
+          height: 0;
+          opacity: 0;
+          transition: all 0.4s ease-in-out;
+        }
+
+        &.show-text {
+          .expanded-section-title {
+            border-bottom: none;
+            img {
+              transition: all 0.4s ease-in-out;
+              transform: rotate(-135deg);
+            }
+          }
+          .expanded-section-text {
+            height: 80px;
+            opacity: 1;
+          }
         }
       }
     }

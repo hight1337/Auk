@@ -187,8 +187,8 @@ title: АИК — About Us
       </div>
       <div class="right">
         <div class="section-buttons">
-          <button>Expand all</button>
-          <button>Hide all</button>
+          <button id="expand">Expand all</button>
+          <button id="hide">Hide all</button>
         </div>
         <article class="expanded-window">
           <div class="expanded-section-title">
@@ -198,7 +198,12 @@ title: АИК — About Us
           </div>
           <!-- start of text expanded window -->
 
-          <!-- text of expand window will be here -->
+          <div class="expanded-section-text">
+            <p>
+              Complex solutions for accelerated aerobic composting and
+              granulation of organic fertilizers
+            </p>
+          </div>
 
           <!-- End of expanden window -->
         </article>
@@ -211,7 +216,12 @@ title: АИК — About Us
           </div>
           <!-- start of text expanded window -->
 
-          <!-- text of expand window will be here -->
+          <div class="expanded-section-text">
+            <p>
+              Complex solutions for accelerated aerobic composting and
+              granulation of organic fertilizers
+            </p>
+          </div>
 
           <!-- End of expanden window -->
         </article>
@@ -222,18 +232,21 @@ title: АИК — About Us
             <!-- Maybe you will need to cahnge this img to smth else -->
             <img src="./assets/images/plus.png" alt="" />
           </div>
-          <!-- start of text expanded window -->
-
-          <!-- text of expand window will be here -->
+          <div class="expanded-section-text">
+            <p>
+              Complex solutions for accelerated aerobic composting and
+              granulation of organic fertilizers
+            </p>
+          </div>
 
           <!-- End of expanden window -->
         </article>
         <!--start of expand window -->
         <article class="expanded-window">
-          <div class="expanded-section-title active">
+          <div class="expanded-section-title">
             <p>Chief assembly and commissioning of equipment</p>
             <!-- Maybe you will need to cahnge this img to smth else -->
-            <img src="./assets/images/close.png" alt="" />
+            <img src="./assets/images/plus.png" alt="" />
           </div>
           <!-- start of text expanded window -->
           <div class="expanded-section-text">
@@ -254,7 +267,12 @@ title: АИК — About Us
           </div>
           <!-- start of text expanded window -->
 
-          <!-- text of expand window will be here -->
+          <div class="expanded-section-text">
+            <p>
+              Complex solutions for accelerated aerobic composting and
+              granulation of organic fertilizers
+            </p>
+          </div>
 
           <!-- End of expanden window -->
         </article>
@@ -268,7 +286,12 @@ title: АИК — About Us
           </div>
           <!-- start of text expanded window -->
 
-          <!-- text of expand window will be here -->
+          <div class="expanded-section-text">
+            <p>
+              Complex solutions for accelerated aerobic composting and
+              granulation of organic fertilizers
+            </p>
+          </div>
 
           <!-- End of expanden window -->
         </article>
@@ -395,25 +418,23 @@ title: АИК — About Us
 
 <section class="we-proud-of--section">
   <div class="we-proud-of--wrapper">
-    <div class="left">
-      <img src="./assets/images/hold-and-drag.png" alt="" />
-    </div>
-    <div class="right">
+    <div class="container">
       <h4 class="title">We proud of</h4>
-      <div class="slider-outter">
-        <div class="slider">
-          <!-- slider item -->
-          <div class="slider-item">
-            <img src="./assets/images/we-proud-of-slider-1.jpg" alt="" />
-            <div class="item-text">
-              <h4>Short headline</h4>
-              <p>
-                Effective network of domestic and international partners
-                worldwide (Russia and the CIS, Europe, the USA, Canada, Japan)
-              </p>
-            </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/we-proud-of-slider-1.jpg" alt="" />
+          <div class="item-text">
+            <h4>Short headline</h4>
+            <p>
+              Effective network of domestic and international partners worldwide
+              (Russia and the CIS, Europe, the USA, Canada, Japan)
+            </p>
           </div>
-          <!-- slider item -->
+        </div>
+        <div class="swiper-slide">
           <div class="slider-item">
             <img src="./assets/images/we-proud-of-slider-2.jpg" alt="" />
             <div class="item-text">
@@ -424,7 +445,82 @@ title: АИК — About Us
               </p>
             </div>
           </div>
-          <!-- slider item -->
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-item">
+            <img src="./assets/images/we-proud-of-slider-2.jpg" alt="" />
+            <div class="item-text">
+              <h4>Short headline</h4>
+              <p>
+                “Idaho Governer’s Valued Partner” award received for AEC-USA
+                cooperation in potato projects
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-item">
+            <img src="./assets/images/we-proud-of-slider-3.jpg" alt="" />
+            <div class="item-text">
+              <h4>Short headline</h4>
+              <p>
+                Continuous participation as an expert in technologies and soil
+                health at international and domestic forums, parliamentary
+                hearings, and round tables organized by Chamber of Commerce and
+                Chamber of Social Affairs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/we-proud-of-slider-1.jpg" alt="" />
+          <div class="item-text">
+            <h4>Short headline</h4>
+            <p>
+              Effective network of domestic and international partners worldwide
+              (Russia and the CIS, Europe, the USA, Canada, Japan)
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-item">
+            <img src="./assets/images/we-proud-of-slider-2.jpg" alt="" />
+            <div class="item-text">
+              <h4>Short headline</h4>
+              <p>
+                “Idaho Governer’s Valued Partner” award received for AEC-USA
+                cooperation in potato projects
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-item">
+            <img src="./assets/images/we-proud-of-slider-2.jpg" alt="" />
+            <div class="item-text">
+              <h4>Short headline</h4>
+              <p>
+                “Idaho Governer’s Valued Partner” award received for AEC-USA
+                cooperation in potato projects
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-item">
+            <img src="./assets/images/we-proud-of-slider-3.jpg" alt="" />
+            <div class="item-text">
+              <h4>Short headline</h4>
+              <p>
+                Continuous participation as an expert in technologies and soil
+                health at international and domestic forums, parliamentary
+                hearings, and round tables organized by Chamber of Commerce and
+                Chamber of Social Affairs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
           <div class="slider-item">
             <img src="./assets/images/we-proud-of-slider-3.jpg" alt="" />
             <div class="item-text">
@@ -439,6 +535,9 @@ title: АИК — About Us
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
