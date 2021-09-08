@@ -6,8 +6,8 @@
     position: relative;
     padding-bottom: 125px;
     h2 {
-      font-family: "DendaNewC", sans-serif;
-      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
       font-size: 70px;
       line-height: 75px;
 
@@ -31,7 +31,7 @@
     .section-bio__text {
       position: relative;
       .title {
-        font-family: "DendaNewC", sans-serif;
+        font-family: "Roboto", sans-serif;
 
         font-weight: 700;
         font-size: 45px;
@@ -183,6 +183,23 @@
     &__title {
       h2 {
         font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .section-bio {
+    &__title {
+      h2 {
+        font-size: 18px;
+      }
+    }
+    &__wrapper {
+      .person-photo {
+        max-width: 290px;
+        margin-right: 0;
+        margin-bottom: 20px;
       }
     }
   }

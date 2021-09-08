@@ -1,6 +1,7 @@
 const articles = document.querySelectorAll(".expanded-window");
 const hideBtn = document.getElementById("hide");
 const showBtn = document.getElementById("expand");
+
 articles.forEach(function (article) {
   const title = article.querySelector(".expanded-section-title");
   title.addEventListener("click", function () {
