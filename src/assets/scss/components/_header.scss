@@ -17,8 +17,9 @@ header {
       font-size: 20px;
       line-height: 26px;
       color: #00a757;
-      border-bottom: none;
+      border-bottom: 1px solid transparent;
       cursor: pointer;
+
       &:hover {
         border-bottom: 1px solid #00a757;
       }
