@@ -1,5 +1,15 @@
 .our-partners--section {
   padding-top: 100px;
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #00a757;
+    margin-bottom: 20px;
+  }
   .our-partners--wrapper {
     display: flex;
     align-items: center;
